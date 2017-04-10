@@ -1,0 +1,27 @@
+Insert one row into decodemtl_addressbook.Account
+Insert one row into decodemtl_addressbook.AddressBook
+Insert three rows into decodemtl_addressbook.Entry
+                       
+INSERT INTO Account (email, password, createdOn)
+                    VALUES
+                    ("example@email.com", "password", CURDATE());
+                    
+                    
+                    
+INSERT INTO AddressBook (accountId, name, createdOn)
+                        VALUES
+                        (1, "First Name", CURDATE());
+                        
+                        
+                        
+INSERT INTO Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne)
+                  VALUES
+                  (1, "First", "Last", 1980-01-01, 'home', 'email', "Test Line");
+                  
+INSERT INTO Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne)
+                  VALUES
+                  (1, "First", "Last", 1980-01-01, 'work', 'address', "Test Line 2");
+                  
+INSERT INTO Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne)
+                  VALUES
+                  (1, "First", "Last", 1980-01-01, 'other', 'phone', "Test Line 3");
