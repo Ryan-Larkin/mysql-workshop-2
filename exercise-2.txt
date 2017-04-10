@@ -4,13 +4,13 @@ Insert three rows into decodemtl_addressbook.Entry
                        
 INSERT INTO Account (email, password, createdOn)
                     VALUES
-                    ("example@email.com", "password", CURDATE());
+                    ("example@email.com", "password", NOW());
                     
                     
                     
 INSERT INTO AddressBook (accountId, name, createdOn)
                         VALUES
-                        (1, "First Name", CURDATE());
+                        (1, "First Name", NOW());
                         
                         
                         
