@@ -1,0 +1,15 @@
+Modify the decodemtl_addressbook.Account row
+Modify the decodemtl_addressbook.AddressBook row
+Modify the three decodemtl_addressbook.Entry rows using one query only
+
+UPDATE Account
+    SET password = "PaSsWoRd"
+    WHERE email = "example@email.com";
+    
+UPDATE AddressBook
+    SET name = "Address Name"
+    WHERE accountId = 1;
+    
+UPDATE Entry 
+    SET contentLineTwo = "Test Update"
+    WHERE addressBookId = 1;
